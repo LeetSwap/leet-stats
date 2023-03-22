@@ -1,9 +1,8 @@
-type ExampleToken @entity {
+type LeetTrader @entity {
   id: String!
-  tokenId: Int!
-  trait: TokenTrait!
-}
-enum TokenTrait {
-  GOOD
-  BAD
+  totalBoughtAmount: BigInt!
+  averageBuyPrice: BigInt!
+  totalSoldAmount: BigInt!
+  averageSellPrice: BigInt!
+  pnl: BigInt!
 }
